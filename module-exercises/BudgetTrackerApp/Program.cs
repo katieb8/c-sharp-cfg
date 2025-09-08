@@ -18,3 +18,43 @@ fixedExpenses.Add(35);
 fixedExpenses.Add(9.99);
 Console.WriteLine("Internet: " + fixedExpenses[3]);
 Console.WriteLine("Spotify: " + fixedExpenses[4]);
+
+double grocerySpent = 350.00;
+double entertainmentSpent = 100.00;
+
+if (grocerySpent > groceryBudget)
+{
+    Console.WriteLine("You are over budget on groceries!");
+}
+else
+{
+    Console.WriteLine("You are within budget for groceries");
+}
+
+if (entertainmentSpent > entertainmentBudget)
+{
+    Console.WriteLine("You are over budget on entertainment!");
+}
+else
+{
+    Console.WriteLine("You are within budget for entertainment");
+}
+
+double remainingGroceryBudget = groceryBudget - grocerySpent;
+double remainingEntertainmentBudget = entertainmentBudget - entertainmentSpent;
+
+Console.WriteLine($"Remaining grocery budget: {remainingGroceryBudget}");
+Console.WriteLine($"Remaining entertainment budget: {remainingEntertainmentBudget}");
+
+if (grocerySpent <= groceryBudget && entertainmentSpent <= entertainmentBudget)
+{
+    Console.WriteLine("You are within budget");
+}
+else if (grocerySpent <= groceryBudget || entertainmentSpent <= entertainmentBudget)
+{
+    Console.WriteLine("You are in budget for one of your spending limits");
+}
+else
+{
+    Console.WriteLine("You are over budget for all your expenses!");
+}
