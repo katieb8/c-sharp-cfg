@@ -75,4 +75,17 @@ double CalculateTotalExpenses(List<double> expenses)
     return totalExpenses;
 }
 
-Console.WriteLine("Total expenses cost is: " + CalculateTotalExpenses(expenses));
+// Console.WriteLine("Total expenses cost is: " + CalculateTotalExpenses(expenses));
+
+double spendingLimit = 900;
+
+int i = 0;
+double currentTotal = 0;
+
+while (i < expenses.Count && currentTotal < spendingLimit)
+{
+    currentTotal = currentTotal + expenses[i];
+    i++;
+}
+
+Console.WriteLine("Total cost of expenses: " + currentTotal);
