@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Data.SqlTypes;
+using System.Diagnostics;
+
 Console.WriteLine("Welcome to our Budget Tracker!");
 
 double groceryBudget = 200.00;
@@ -58,3 +61,18 @@ else
 {
     Console.WriteLine("You are over budget for all your expenses!");
 }
+
+List<double> expenses = new List<double> { 700, 50, 150, 25, 30 };
+
+double CalculateTotalExpenses(List<double> expenses)
+{
+    double totalExpenses = 0;
+
+    for (int i = 0; i < expenses.Count; i++)
+    {
+        totalExpenses = totalExpenses + expenses[i];
+    }
+    return totalExpenses;
+}
+
+Console.WriteLine("Total expenses cost is: " + CalculateTotalExpenses(expenses));
