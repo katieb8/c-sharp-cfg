@@ -12,3 +12,4 @@ C:\Source\Bitbucket\c-sharp-cfg\module-exercises\BudgetTrackerApp\obj\Debug\net8
 C:\Source\Bitbucket\c-sharp-cfg\module-exercises\BudgetTrackerApp\obj\Debug\net8.0\BudgetTrackerApp.pdb
 C:\Source\Bitbucket\c-sharp-cfg\module-exercises\BudgetTrackerApp\obj\Debug\net8.0\BudgetTrackerApp.genruntimeconfig.cache
 C:\Source\Bitbucket\c-sharp-cfg\module-exercises\BudgetTrackerApp\obj\Debug\net8.0\ref\BudgetTrackerApp.dll
+C:\Source\Bitbucket\c-sharp-cfg\module-exercises\BudgetTrackerApp\obj\Debug\net8.0\BudgetTrackerApp.sourcelink.json

@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Budget Tracker</h1>
+    <form method="post">
+        <div>
+            <label asp-for="Expense1">Expense 1:</label>
+            <input type="number" asp-for="Expense1">
+        </div>
+        <div><label asp-for="Expense2">Expense 2:</label>
+            <input type="number" asp-for="Expense2">
+        </div>
+        <div>
+
+            <label asp-for="Expense3">Expense 3:</label>
+            <input type="number" asp-for="Expense3">
+        </div>
+        <div>
+            <label asp-for="Expense4">Expense 4:</label>
+            <input type="number" asp-for="Expense4">
+        </div>
+        <div>
+            <label asp-for="Expense5">Expense 5:</label>
+            <input type="number" asp-for="Expense5">
+        </div>
+        <button type="submit">Calculate total</button>
+    </form>
+
+    <h2>Total expenses: @Model.TotalExpenses</h2>
+</div>
